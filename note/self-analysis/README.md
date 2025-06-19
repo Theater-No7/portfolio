@@ -1,5 +1,5 @@
 # 【自己分析】就活に悩むなら、まずはここから。
-![アイキャッチ](eyecatch.png)
+![自己分析のアイキャッチ](images/eyecatch.png)
 【[note記事はこちら](https://note.com/theater_no7/n/nf302944c4b56?sub_rt=share_sb)】
 
 ## 就活中の皆さんへ
