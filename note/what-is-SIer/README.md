@@ -6,6 +6,10 @@
 
 [7番劇場](https://note.com/theater_no7)
 
+【[note記事はこちら](https://note.com/theater_no7/n/n0d270a3cfcf2)】
+
+※ この記事は全文AI生成なので全然面白くありません。
+
 ## 目次
 
 1.  はじめに
