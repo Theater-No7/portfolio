@@ -68,7 +68,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja" className="scroll-smooth">
-      <body className={`${geist.variable} ${geistMono.variable} ${notoSansJP.variable} font-sans antialiased bg-transparent text-white selection:bg-[#148E96] selection:text-white`}>
+      <body suppressHydrationWarning className={`${geist.variable} ${geistMono.variable} ${notoSansJP.variable} font-sans antialiased bg-transparent text-white selection:bg-[#148E96] selection:text-white`}>
         <AmbientBackground />
         <ScrollBubbles />
         <CustomCursor />
