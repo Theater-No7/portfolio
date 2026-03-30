@@ -1,7 +1,7 @@
 "use client";
 
 import { motion, Variants } from "framer-motion";
-import { ExternalLink, Sparkles, BookOpen, Palette, Layers } from "lucide-react";
+import { ExternalLink, Sparkles, BookOpen, Palette, Layers, Hash } from "lucide-react";
 import Image from "next/image"; // ← 追加
 
 const projects = [
@@ -44,6 +44,16 @@ const projects = [
         tags: ["Graphic Design", "Illustrator", "Neon Art", "Widget"],
         link: "https://theater-no7.booth.pm/",
         icon: Layers,
+    },
+    {
+        id: 5,
+        title: "101 Keywords",
+        description:
+            "自身を構成する101のキーワードを集めたインタラクティブなコレクション。ステッカーを操作して詳細を閲覧できます。",
+        image: "/projects/101-keywords.png",
+        tags: ["React", "Interactive", "Profile"],
+        link: "https://101-keywords-profile.vercel.app/",
+        icon: Hash,
     },
 ];
 
@@ -120,13 +130,15 @@ export function WorksSection() {
                                     {/* 🖼️ 画像表示エリア */}
                                     <div className="relative h-80 w-full overflow-hidden bg-gray-900">
                                         {/* Next.js Image Component */}
-                                        <Image
-                                            src={project.image}
-                                            alt={project.title}
-                                            fill
-                                            className="object-cover transition-transform duration-700 group-hover:scale-110"
-                                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                                        />
+                                        {project.image && (
+                                            <Image
+                                                src={project.image}
+                                                alt={project.title}
+                                                fill
+                                                className="object-cover transition-transform duration-700 group-hover:scale-110"
+                                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                                            />
+                                        )}
 
                                         {/* Overlay (画像を少し暗くして文字を見やすくする) */}
                                         <div className="absolute inset-0 bg-gradient-to-t from-[#0d0d0d] via-transparent to-transparent opacity-80" />
